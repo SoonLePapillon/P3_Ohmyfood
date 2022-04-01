@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:./css/style.css",
-    /* ou "sass": "sass --watch sass/main.scss:css/style.css" car ./ sert juste à mieux visualiser tandis que ../ sert à remonter à la racine */
     "prefix": "postcss style.css --use autoprefixer -d prefixed"
   },
   "repository": {

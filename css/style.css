@@ -54,27 +54,11 @@ header .header__logo img {
 }
 
 main {
-  width: 100%;
-}
-main .main__header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #f6f6f6;
-  padding: 25px 15px 40px 15px;
-}
-main .main__header > h1 {
-  font-size: 25px;
-  font-weight: 500;
-  margin: 0;
-}
-main .main__header > h2 {
-  font-size: 16px;
-  font-weight: 400;
-  font-style: bold;
-  opacity: 0.8;
-  margin: 20px 0;
+  width: 100%;
 }
 
 .header__location {
@@ -89,6 +73,46 @@ main .main__header > h2 {
   gap: 5px;
   font-size: 13px;
   color: rgb(48, 48, 48);
+}
+
+.main__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f6f6;
+  padding: 25px 15px 40px 15px;
+}
+.main__header > h1 {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 0;
+}
+.main__header > h2 {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: bold;
+  opacity: 0.8;
+  margin: 20px 0;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+}
+aside .aside__helper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+aside .aside__helper__card {
+  width: 300px;
+  height: 100px;
+  border-radius: 25px;
+  background-color: #fcfcfc;
 }
 
 /*# sourceMappingURL=style.css.map */
