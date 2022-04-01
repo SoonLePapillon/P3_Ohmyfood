@@ -1,0 +1,23 @@
+{
+  "name": "ohmyfood_code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css",
+    /* ou "sass": "sass --watch sass/main.scss:css/style.css" car ./ sert juste à mieux visualiser tandis que ../ sert à remonter à la racine */
+    "prefix": "postcss style.css --use autoprefixer -d prefixed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SoonLePapillon/P3_Ohmyfood.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SoonLePapillon/P3_Ohmyfood/issues"
+  },
+  "homepage": "https://github.com/SoonLePapillon/P3_Ohmyfood#readme",
+  "browserslist": "last 4 versions"
+  
+}

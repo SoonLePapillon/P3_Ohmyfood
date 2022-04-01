@@ -1,0 +1,26 @@
+// Le code est exécuté ligne par ligne ce qui veut dire que je dois import les variables avant le reste si je vais les réutiliser dans ce même reste //
+
+// Du coup, faut importer les utils en premier, c'est mieux.
+
+//Utils
+@import "utils/_variables";
+@import "utils/_mixins";
+
+//Base
+@import "base/_font";
+@import "base/_normalizer";
+
+
+//Components 
+@import "components/_button";
+//Layout
+@import "layout/_header";
+@import "layout/_footer";
+
+//Pages 
+@import "pages/home"
+
+
+
+
+

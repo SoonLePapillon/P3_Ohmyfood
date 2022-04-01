@@ -1,0 +1,9 @@
+* {
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+body {
+    @include flex_column;
+    margin: 0px;    
+}
