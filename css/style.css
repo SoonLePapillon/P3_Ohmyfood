@@ -28,6 +28,7 @@ button {
   transition-duration: 0.5s;
 }
 button:hover {
+  cursor: pointer;
   transition-duration: 0.5s;
   box-shadow: 0px 0px 18px 5px rgb(112, 112, 112);
 }
@@ -96,23 +97,68 @@ main {
   margin: 20px 0;
 }
 
+.main__main {
+  background-color: white;
+  padding: 0 200px;
+}
+
 aside {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   width: 100%;
 }
-aside .aside__helper {
+
+.aside__helper {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
+  gap: 20px;
+  padding: 0;
 }
-aside .aside__helper__card {
-  width: 300px;
-  height: 100px;
+.aside__helper__card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 500px;
+  height: 85px;
+  border-radius: 20px;
+  background-color: #f8f8f8;
+  box-shadow: 0px 0px 25px -6px rgb(112, 112, 112);
+  transition: all 0.2s;
+}
+.aside__helper__card:hover {
+  transition: all 0.2s;
+  background-color: #e6d7f7;
+}
+.aside__helper__card__num {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: -10px;
+  font-weight: 500;
+  font-size: 13px;
+  color: white;
+  min-width: 20px;
+  height: 20px;
+  background-color: #9356DC;
   border-radius: 25px;
-  background-color: #fcfcfc;
+}
+.aside__helper__card__text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(29, 29, 29, 0.918);
 }
 
 /*# sourceMappingURL=style.css.map */
