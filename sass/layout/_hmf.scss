@@ -18,8 +18,12 @@ header {
 }
 main {
     @include flex_column;
-    @include justalign_center;
     width: 100%;
+    padding: 0 6%;
 }
 
+footer {
+    margin-top: 10px;
+    background-color: rgb(197, 189, 189);
+}
 

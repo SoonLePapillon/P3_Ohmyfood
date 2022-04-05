@@ -5,5 +5,15 @@
 
 body {
     @include flex_column;
-    margin: 0px;    
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size : 25px;
+    font-weight: 500;
+    margin: 0;
 }
