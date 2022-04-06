@@ -49,7 +49,7 @@
             background-color: #e6d7f7;
         }
         &:hover .fa-solid {
-            color:$primary-violet;
+            // color:$primary-violet;
         }
         &__num {
             @include flex_row;
@@ -61,7 +61,7 @@
             color:white;
             min-width: 20px;
             height: 20px;
-            background-color: $primary-violet;
+            // background-color: $primary-violet;
             border-radius: 25px;
         }
         &__text {
@@ -91,30 +91,60 @@ section {
 }
 
 .section__main__card {
-    @include flex_row;
+    @include flex_column;
     flex-wrap: wrap;
-    width: 23%;
+    min-width: 325px;
+    width: 24%;
     height: 230px;
+    position: relative;
     border-radius: 20px;
     box-shadow: 0px 0px 25px -6px rgba(112, 112, 112, 1);
     &__picture {
-        width: 100%;
         height: 150px;
-    }
-    > div > img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0;
-    }
-    &__text {
-        width: 95%;
-        color:black;
-        > h2 {
-            font-size: 22px;
+        > img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px 20px 0 0;
         }
-        > h3 {
-            font-size: 17px;
+    }
+    &__new {
+        @include flex_column;
+        @include justalign_center;
+        right: 15px;
+        top: 20px;
+        width: 75px;
+        height: 30px;
+        border-radius: 5px;
+        opacity: 0.9;
+        // background-color: $tertiary-green;
+        color:rgb(24, 73, 61);
+        position: absolute;
+    }
+    &__descp {
+        @include flex_row;
+        width: auto;
+        height: 80px;
+        color:black;
+        padding: 0 2% 0 2%;
+        &__titles {
+            @include flex_column;
+            justify-content: center;
+            width: 85%;
+        }
+        &__icn {
+            @include flex_column;
+            @include justalign_center;
+            width: 15%;
+            font-size: 25px;
+            i:hover{
+                font-weight: bold;
+                background: map-get($color, pink-gradient);
+                -webkit-background-clip: text;
+                // l'arrière plan est limite (rogné) au texte en premier plan donc l'icone)
+                -webkit-text-fill-color: transparent;
+                // dé
+            }
         }
     }
 }
