@@ -19,11 +19,67 @@ header {
 main {
     @include flex_column;
     width: 100%;
-    padding: 0 6%;
 }
 
 footer {
-    margin-top: 10px;
-    background-color: rgb(197, 189, 189);
+    @include flex_column;
+    @include justalign_center;
+    align-items: center;
+    background-color: #3c3c3c;
+    height: 150px;
+    h1 {
+        font-family: Shrikhand;
+        color:white;
+    }
+    .footer__text {
+        @include flex_row;
+        @include justalign_center;
+        gap: 150px;
+        margin-top:30px;
+        &__icn {
+            font-weight: 500;
+        }
+    }
+    a {
+        display: flex;
+        color: white;
+        gap:15px;
+        font-weight: 300;
+    }
+    a:hover {
+        color: map-get($color, primary-violet);
+    }
 }
 
+/////////////////////////////////////////
+///////////// MEDIA QUERIES /////////////
+/////////////////////////////////////////
+
+@media all and (max-width:1070px) {
+    footer {
+        @include flex_column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 20px;
+        gap: 10px;
+        padding: 30px 0 30px 20px;
+        height: auto;
+        h1 {
+        font-size:20px;
+        }
+        .footer__text {
+            @include flex_column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 5px;
+            font-weight: 500;
+            margin-top:0;
+        }
+        a {
+            gap:5px;
+        }
+        .fa-solid {
+            width: 20px;
+        }
+    }
+}
