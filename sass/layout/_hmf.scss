@@ -33,8 +33,9 @@ footer {
     }
     .footer__text {
         @include flex_row;
-        @include justalign_center;
-        gap: 150px;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
         margin-top:30px;
         &__icn {
             font-weight: 500;
@@ -42,6 +43,7 @@ footer {
     }
     a {
         display: flex;
+        flex-wrap: nowrap;
         color: white;
         gap:15px;
         font-weight: 300;
@@ -56,6 +58,22 @@ footer {
 /////////////////////////////////////////
 
 @media all and (max-width:1070px) {
+    footer {
+        .footer__text {
+            @include flex_row;
+            width: 90%;
+            gap: 30px;
+            }
+        a {
+            display: flex;
+            color: white;
+            gap:15px;
+            font-weight: 300;
+            }
+        }
+    }
+
+@media all and (max-width:800px) {
     footer {
         @include flex_column;
         justify-content: center;
@@ -72,7 +90,6 @@ footer {
             justify-content: flex-start;
             align-items: flex-start;
             gap: 5px;
-            font-weight: 500;
             margin-top:0;
         }
         a {

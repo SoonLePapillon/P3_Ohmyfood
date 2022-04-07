@@ -1,4 +1,4 @@
-button {
+.button {
     @include flex_column;
     @include justalign_center;
     width: 250px;

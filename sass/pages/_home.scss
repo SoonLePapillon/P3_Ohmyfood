@@ -6,7 +6,7 @@
     background-color: #eaeaea;
     box-shadow: inset 4px 6px 19px -3px rgba(84, 84, 84, 0.4);
     gap: 5px;
-    font-size: 13px;
+    font-size: 14px;
     color: rgb(48, 48, 48);
 }
 .header_main {
@@ -33,7 +33,7 @@ main {
 aside {
     @include flex_column;
     gap:20px;
-    padding: 2% 10%;
+    padding: 20px 10%;
 }
 
 .aside__helper {
@@ -90,7 +90,7 @@ section {
     width: 100%;
     gap:20px;
     background-color: #f6f6f6;
-    padding: 2% 10% 2% 10%;
+    padding: 30px 10%;
     .section__main {
         @include flex_row;
         justify-content: space-between;
@@ -174,12 +174,13 @@ section {
 @media all and (max-width:1670px) {
     section {
         .section__main {
-            justify-content:center;
-            padding: 2% 2% 10% 2%;
+            justify-content:space-between;
+            align-items: stretch;
+            // mieux que gap car l'écart horizontale se fait automatiquement //
         }
     }
     .section__main__card {
-        width: 48%;
+        width: 48.5%;
         }
 }
 
