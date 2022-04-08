@@ -3,16 +3,11 @@
 // Du coup, faut importer les utils en premier, c'est mieux.
 
 //Utils
-@import "utils/_variables";
-@import "utils/_mixins";
+@import "utils/_varMix";
 
 //Base
-@import "base/_font";
 @import "base/_normalizer";
 
-
-//Components 
-@import "components/_button";
 //Layout
 @import "layout/_hmf";
 

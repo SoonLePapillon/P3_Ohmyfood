@@ -1,3 +1,10 @@
+$color: (
+    primary-violet: #9356DC,
+    secondary-pink: #FF79DA,
+    tertiary-green: #99E2D0,
+    pink-gradient : linear-gradient(176deg, #ff79da 0%, #9356dc 100%),
+);
+
 @mixin flex_column {
     display: flex;
     flex-direction: column;
