@@ -12,6 +12,7 @@
 
 body {
     @include flex_column;
+    @include justalign_center;
     margin: 0px;
 }
 
@@ -19,26 +20,28 @@ a {
     text-decoration: none;
 }
 
+li {
+    list-style: none;
+}
+
 h1 {
     font-size : 25px;
     font-weight: 500;
     margin: 0;
 }
-
 h2 {
-    font-size: 17px;
+    font-size: 18px;
     margin:0;
 }
 h3 {
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 300;
     margin:0;
 }
-
 .button {
     @include flex_column;
     @include justalign_center;
-    width: 250px;
+    width: 300px;
     height: 50px;
     border: none;
     border-radius: 25px;
@@ -53,5 +56,19 @@ h3 {
         transition-duration: 0.4s;
         box-shadow: 0px 0px 18px 5px rgba(112, 112, 112, 1);
         
+    }
+}
+
+.heart {
+    @include flex_column;
+    @include justalign_center;
+    font-size: 25px;
+    i:hover{
+        font-weight: bold;
+        background: map-get($color, pink-gradient);
+        -webkit-background-clip: text;
+        // l'arrière plan est limite (rogné) au texte en premier plan donc l'icone)
+        -webkit-text-fill-color: transparent;
+        // défini la couleur utilisée pour dessiner le contenu des lettres. Par défaut c'est la propriété color 
     }
 }
