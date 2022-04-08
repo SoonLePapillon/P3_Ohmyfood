@@ -80,8 +80,8 @@ main {
         justify-content: center;
         align-items: flex-start;
         padding-left: 20px;
-        gap: 10px;
-        padding: 30px 0 30px 20px;
+        gap: 20px;
+        padding: 20px 0 30px 20px;
         height: auto;
         h1 {
         font-size:20px;
@@ -90,7 +90,7 @@ main {
             @include flex_column;
             justify-content: flex-start;
             align-items: flex-start;
-            gap: 5px;
+            gap: 6px;
             margin-top:0;
         }
         a {
