@@ -203,6 +203,14 @@ aside {
   box-shadow: 0px 0px 25px -6px rgb(112, 112, 112);
   transition: all 0.2s;
   padding: 0px 30px;
+  padding: 0px 30px;
+}
+.aside__helper__card:hover {
+  transition: all 0.2s;
+  background-color: #e6d7f7;
+}
+.aside__helper__card:hover .fa-solid {
+  color: #9356DC;
 }
 .aside__helper__card__num {
   display: flex;
