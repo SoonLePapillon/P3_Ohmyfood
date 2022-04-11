@@ -1,12 +1,16 @@
 // Home Main Footer
 
+
+.d-flex {
+    display:flex;
+}
+
 header {
     @include flex_column;
     @include justalign_center;
     flex-wrap: nowrap;
     width: 100%;
     .header__logo {
-        @include flex_row;
         @include justalign_center;
         width: 100%;
         padding: 15px 0;
@@ -58,46 +62,3 @@ main {
 ///////////// MEDIA QUERIES /////////////
 /////////////////////////////////////////
 
-@media all and (max-width:1070px) {
-    #footer {
-        .footer__text {
-            @include flex_row;
-            width: 90%;
-            gap: 30px;
-            }
-        a {
-            display: flex;
-            color: white;
-            gap:15px;
-            font-weight: 300;
-            }
-        }
-    }
-
-@media all and (max-width:800px) {
-    #footer {
-        @include flex_column;
-        justify-content: center;
-        align-items: flex-start;
-        padding-left: 20px;
-        gap: 20px;
-        padding: 20px 0 30px 20px;
-        height: auto;
-        h1 {
-        font-size:20px;
-        }
-        .footer__text {
-            @include flex_column;
-            justify-content: flex-start;
-            align-items: flex-start;
-            gap: 6px;
-            margin-top:0;
-        }
-        a {
-            gap:5px;
-        }
-        .fa-solid {
-            width: 20px;
-        }
-    }
-}

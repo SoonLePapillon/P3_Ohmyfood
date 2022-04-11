@@ -75,6 +75,10 @@ h3 {
   -webkit-text-fill-color: transparent;
 }
 
+.d-flex {
+  display: flex;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -84,8 +88,6 @@ header {
   width: 100%;
 }
 header .header__logo {
-  display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -138,52 +140,7 @@ main {
   color: #9356DC;
 }
 
-@media all and (max-width: 1070px) {
-  #footer .footer__text {
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    gap: 30px;
-  }
-  #footer a {
-    display: flex;
-    color: white;
-    gap: 15px;
-    font-weight: 300;
-  }
-}
-@media all and (max-width: 800px) {
-  #footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding-left: 20px;
-    gap: 20px;
-    padding: 20px 0 30px 20px;
-    height: auto;
-  }
-  #footer h1 {
-    font-size: 20px;
-  }
-  #footer .footer__text {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 6px;
-    margin-top: 0;
-  }
-  #footer a {
-    gap: 5px;
-  }
-  #footer .fa-solid {
-    width: 20px;
-  }
-}
 .header__location {
-  display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -226,11 +183,9 @@ aside {
 
 .aside__helper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  width: 100%;
   padding: 0 0 0 5px;
   margin: 0;
   gap: 20px;
@@ -241,19 +196,13 @@ aside {
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 500px;
+  width: 100%;
   height: 85px;
   border-radius: 20px;
   background-color: #f8f8f8;
   box-shadow: 0px 0px 25px -6px rgb(112, 112, 112);
   transition: all 0.2s;
-}
-.aside__helper__card:hover {
-  transition: all 0.2s;
-  background-color: #e6d7f7;
-}
-.aside__helper__card:hover .fa-solid {
-  color: #9356DC;
+  padding: 0px 30px;
 }
 .aside__helper__card__num {
   display: flex;
@@ -275,10 +224,22 @@ aside {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  width: 250px;
+  gap: 25px;
   font-size: 16px;
   font-weight: 600;
+  margin: 10px;
   color: rgba(29, 29, 29, 0.918);
+}
+.aside__helper__card__text i {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-width: 10%;
+}
+.aside__helper__card__text p {
+  width: 90%;
 }
 
 #index__section {
@@ -291,7 +252,7 @@ aside {
 }
 #index__section .section__main {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
@@ -304,7 +265,7 @@ aside {
   flex-direction: column;
   flex-wrap: wrap;
   min-width: 315px;
-  width: 23%;
+  width: 100%;
   height: 240px;
   position: relative;
   border-radius: 20px;
@@ -369,8 +330,17 @@ aside {
   -webkit-text-fill-color: transparent;
 }
 
-@media all and (max-width: 1670px) {
-  section .section__main {
+@media all and (min-width: 1070px) {
+  .aside__helper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #index__section .section__main {
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
   }
@@ -379,21 +349,14 @@ aside {
     width: 48.5%;
   }
 }
-@media all and (max-width: 1070px) {
-  .aside__helper {
+@media all and (min-width: 1670px) {
+  #index__section .section__main {
     display: flex;
-    flex-direction: column;
-  }
-  .aside__helper__card {
-    width: 100%;
-  }
-
-  section .section__main {
-    justify-content: center;
+    flex-direction: row;
   }
 
   .section__main__card {
-    width: 99%;
+    width: 23%;
   }
 }
 #restau__header {
@@ -421,11 +384,11 @@ aside {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 100%;
   margin-top: -75px;
   background-color: #f6f6f6;
   border-radius: 55px 55px 0 0;
-  padding: 0 10%;
+  padding: 0;
   box-shadow: 0px 0px 25px -6px rgb(112, 112, 112);
   z-index: 2;
 }
@@ -434,7 +397,7 @@ aside {
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 20px;
-  padding: 20px 13% 0 10%;
+  padding: 20px 10% 0 10%;
 }
 #restau__main .section__header > h1 {
   font-family: Shrikhand;
@@ -442,7 +405,7 @@ aside {
 
 #restau__section {
   width: 100%;
-  padding: 0 10%;
+  padding: 0 4%;
 }
 #restau__section .section__line {
   width: 40px;
@@ -503,22 +466,15 @@ aside {
   margin: 60px 0px 80px 0px;
 }
 
-@media all and (max-width: 1280px) {
+@media all and (min-width: 1070px) {
   #restau__main {
     width: 90%;
+    padding: 0 10%;
   }
 }
-@media all and (max-width: 1070px) {
+@media all and (min-width: 1670px) {
   #restau__main {
-    width: 100%;
-    padding: 0;
-  }
-  #restau__main .section__header {
-    padding: 20px 10% 0 10%;
-  }
-
-  #restau__section {
-    padding: 0 4%;
+    width: 70%;
   }
 }
 

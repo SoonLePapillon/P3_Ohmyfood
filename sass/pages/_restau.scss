@@ -22,18 +22,18 @@
 #restau__main {
     @include flex_column;
     @include justalign_center;
-    width: 80%;
+    width: 100%;
     margin-top:-75px;
     background-color: #f6f6f6;
     border-radius: 55px 55px 0 0;
-    padding: 0 10%;
+    padding: 0;
     box-shadow: 0px 0px 25px -6px rgba(112, 112, 112, 1);
     z-index:2;
     .section__header {
         @include flex_row;
         justify-content: space-between;
         margin-bottom: 20px;
-        padding: 20px 13% 0 10%;
+        padding: 20px 10% 0 10%;
         > h1 {
             font-family: Shrikhand;
         }
@@ -42,7 +42,7 @@
 
 #restau__section {
     width: 100%;
-    padding: 0 10%;
+    padding: 0 4%;
     .section__line {
         width: 40px;
         border-bottom: map-get($color, tertiary-green) 3px solid;
@@ -75,7 +75,6 @@
             }
             &:hover > div[class*="animation"] {
                 width: 100px;
-
             }
             h2, .hspan{
                 @include flex_row;
@@ -97,21 +96,16 @@
     margin:60px 0px 80px 0px;
 }
 
-@media all and (max-width:1280px) {
-    #restau__main{
-    width: 90%;
+@media all and (min-width:1070px) {
+    #restau__main {
+        width: 90%;
+        padding: 0 10%;
     }
 }
 
-@media all and (max-width:1070px) {
-    #restau__main{
-    width: 100%;
-    padding:0;
-    .section__header {
-        padding: 20px 10% 0 10%;
-    }
-}
-    #restau__section {
-        padding: 0 4%;
+@media all and (min-width:1670px) {
+    #restau__main {
+        width: 70%;
+        // le padding reste à 0 10% du coup //
     }
 }
