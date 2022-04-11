@@ -75,10 +75,6 @@ h3 {
   -webkit-text-fill-color: transparent;
 }
 
-.d-flex {
-  display: flex;
-}
-
 header {
   display: flex;
   flex-direction: column;
@@ -88,6 +84,8 @@ header {
   width: 100%;
 }
 header .header__logo {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -141,6 +139,8 @@ main {
 }
 
 .header__location {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100%;

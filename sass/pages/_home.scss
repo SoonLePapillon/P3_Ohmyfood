@@ -1,4 +1,5 @@
 .header__location {
+    @include flex_row;
     @include justalign_center;
     width: 100%;
     height: 40px;

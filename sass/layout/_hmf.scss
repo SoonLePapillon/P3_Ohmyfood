@@ -1,16 +1,12 @@
 // Home Main Footer
 
-
-.d-flex {
-    display:flex;
-}
-
 header {
     @include flex_column;
     @include justalign_center;
     flex-wrap: nowrap;
     width: 100%;
     .header__logo {
+        @include flex_row;
         @include justalign_center;
         width: 100%;
         padding: 15px 0;
