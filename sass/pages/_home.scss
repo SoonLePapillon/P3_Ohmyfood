@@ -68,12 +68,12 @@ aside {
             @include flex_row;
             @include justalign_center;
             position: absolute;
-            left: -10px;
+            left: -12px;
             font-weight: 500;
             font-size: 13px;
             color:white;
-            min-width: 20px;
-            height: 20px;
+            min-width: 25px;
+            height: 25px;
             background-color : map-get($color, primary-violet);
             border-radius: 25px;
         }
@@ -180,9 +180,15 @@ aside {
     }
 }
 @media all and (min-width : 1070px) {
+    
     .aside__helper {
         @include flex_row;
-        @include justalign_center;
+        // @include justalign_center;
+        justify-content: space-between;
+        gap:initial;
+        &__card {
+        width: 32%;
+        }
     }
     #index__section {
         .section__main {
