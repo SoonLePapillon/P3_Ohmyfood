@@ -36,7 +36,7 @@ main {
 aside {
     @include flex_column;
     gap:20px;
-    padding: 20px 10% 40px 10%;
+    padding: 40px 7% 60px 7%;
 }
 
 .aside__helper {
@@ -80,11 +80,10 @@ aside {
         &__text {
             @include flex_row;
             @include justalign_center;
-            width: 250px;
-            gap: 25px;
+            width: 250px ;
+            gap: 20px;
             font-size: 16px;
             font-weight: 600;
-            margin: 10px;
             color:rgba(29, 29, 29, 0.918);
             i {
                 @include flex_row;
@@ -104,12 +103,12 @@ aside {
     width: 100%;
     gap:20px;
     background-color: #f6f6f6;
-    padding: 30px 10% 60px 10%;
+    padding: 30px 7% 60px 7%;
     .section__main {
         @include flex_column;
         justify-content: space-between;
         flex-wrap: wrap;
-        gap: 20px;
+        row-gap: 35px;
         width: 100%;
         padding:0px;
     }
@@ -179,15 +178,15 @@ aside {
         }
     }
 }
-@media all and (min-width : 1070px) {
+@media all and (min-width : 1150px) {
     
     .aside__helper {
         @include flex_row;
         // @include justalign_center;
         justify-content: space-between;
-        gap:initial;
+        gap:30px;
         &__card {
-        width: 32%;
+        width: 31%;
         }
     }
     #index__section {
@@ -195,6 +194,7 @@ aside {
             @include flex-row;
             justify-content:space-between;
             align-items: stretch;
+            row-gap:35px;
         }
     }
     .section__main__card {
@@ -204,7 +204,11 @@ aside {
 
 
 @media all and (min-width : 1670px) {
+    aside {
+        padding: 40px 10% 60px 10%;
+    }
     #index__section {
+        padding: 30px 10% 60px 10%;
         .section__main {
             @include flex_row;
         }

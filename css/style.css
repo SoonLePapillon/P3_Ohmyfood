@@ -219,7 +219,7 @@ aside {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 20px 10% 40px 10%;
+  padding: 40px 7% 60px 7%;
 }
 
 .aside__helper {
@@ -274,10 +274,9 @@ aside {
   justify-content: center;
   align-items: center;
   width: 250px;
-  gap: 25px;
+  gap: 20px;
   font-size: 16px;
   font-weight: 600;
-  margin: 10px;
   color: rgba(29, 29, 29, 0.918);
 }
 .aside__helper__card__text i {
@@ -297,14 +296,14 @@ aside {
   width: 100%;
   gap: 20px;
   background-color: #f6f6f6;
-  padding: 30px 10% 60px 10%;
+  padding: 30px 7% 60px 7%;
 }
 #index__section .section__main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 20px;
+  row-gap: 35px;
   width: 100%;
   padding: 0px;
 }
@@ -379,15 +378,15 @@ aside {
   -webkit-text-fill-color: transparent;
 }
 
-@media all and (min-width: 1070px) {
+@media all and (min-width: 1150px) {
   .aside__helper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: initial;
+    gap: 30px;
   }
   .aside__helper__card {
-    width: 32%;
+    width: 31%;
   }
 
   #index__section .section__main {
@@ -395,6 +394,7 @@ aside {
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
+    row-gap: 35px;
   }
 
   .section__main__card {
@@ -402,6 +402,13 @@ aside {
   }
 }
 @media all and (min-width: 1670px) {
+  aside {
+    padding: 40px 10% 60px 10%;
+  }
+
+  #index__section {
+    padding: 30px 10% 60px 10%;
+  }
   #index__section .section__main {
     display: flex;
     flex-direction: row;
@@ -477,24 +484,46 @@ aside {
   background-color: white;
   align-items: flex-start;
   justify-content: center;
+  position: relative;
   gap: 3px;
   width: 100%;
   height: 70px;
   border-radius: 17px;
   padding: 0 25px 0 15px;
   box-shadow: 0px 0px 10px #888;
+  transition: width 1s ease;
 }
-#restau__section .section__listfood__card div[class*=animation] {
+#restau__section .section__listfood__card::before {
+  content: "\f058";
+  font-family: "Font Awesome 6 Free";
+  position: absolute;
+  width: 0px;
+  font-size: 25px;
+  color: white;
+  right: 17px;
+  top: 22px;
+  background-color: #99E2D0;
+  transition: width 1s ease-in-out;
+  border-radius: 0 17px 17px 0;
+  z-index: 3;
+}
+#restau__section .section__listfood__card::after {
+  content: "";
+  width: 0%;
+  height: 100%;
+  font-size: 25px;
+  color: white;
+  border-radius: 0 17px 17px 0;
+  position: absolute;
   right: 0;
   top: 0;
-  bottom: 5;
-  width: 50px;
-  height: 100%;
-  border-radius: 0 17px 17px 0;
-  background-color: red;
+  bottom: 0;
+  background-color: #99E2D0;
+  transition: width 1s ease;
+  z-index: 2;
 }
-#restau__section .section__listfood__card:hover > div[class*=animation] {
-  width: 100px;
+#restau__section .section__listfood__card:hover::after, #restau__section .section__listfood__card:hover::before {
+  width: 10%;
 }
 #restau__section .section__listfood__card h2, #restau__section .section__listfood__card .hspan {
   display: flex;
@@ -504,9 +533,12 @@ aside {
   width: 100%;
   justify-content: space-between;
 }
-#restau__section .section__listfood__card h2 span, #restau__section .section__listfood__card .hspan span {
+#restau__section .section__listfood__card span {
   font-size: 15px;
   font-weight: 700;
+}
+#restau__section .section__listfood__card i {
+  display: none;
 }
 
 .section__footer {
