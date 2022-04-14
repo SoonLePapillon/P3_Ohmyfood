@@ -94,7 +94,7 @@
                 height: 100%;
                 background-color: map-get($color, tertiary-green);
                 border-radius:0 17px 17px 10;
-                transition: all 500ms linear;
+                transition: all 350ms linear;
                 i {
                     font-size: 26px;
                     color: white;
@@ -106,8 +106,8 @@
                     width: 75px;
                 }
                 i {
-                    transform: rotate(-360deg); 
-                    transition: transform 500ms ease-in-out;
+                    transform: rotate(360deg); 
+                    transition: transform 350ms ease-in-out;
                 }
                 }
             }
@@ -142,15 +142,25 @@
     margin:60px 0px 80px 0px;
 }
 
+#restau__header {
+    .header__photo {
+        height: 300px;
+    }
+}
+
+
+@media all and (min-width:501px) {
+    #restau__header {
+        .header__photo {
+            height: 500px;
+        }
+    }
+}
+
 @media all and (min-width:1070px) {
     #restau__main {
         width: 90%;
         padding: 0 10%;
-    }
-}
-#restau__header {
-    .header__photo {
-        height: 300px;
     }
 }
 
@@ -161,10 +171,3 @@
     }
 }
 
-@media all and (min-width:501px) {
-    #restau__header {
-        .header__photo {
-            height: 500px;
-        }
-    }
-}

@@ -1,25 +1,30 @@
 .loader {
-    margin:0px;
-    padding:0px;
+    @include flex_column;
+    @include justalign_center;
     width: 100%;
     height: 100%;
     position:fixed;
     top:0;
     bottom:0;
-    @include flex_column;
-    @include justalign_center;
     z-index: 9999;
     opacity: 100%;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     animation: fadeout 1s forwards;
-    animation-delay: 3s;
+    animation-delay: 2s;
+    &__title {
+        font-family:Roboto;
+        font-weight: 400;
+        font-size: 30px;
+    }
     .burger {
+        height: 200px;
         @include flex_column;
         @include justalign_center;
         animation: rotation 3s linear 0s 1 normal forwards;
         &__top {
-            height: 41px;
-            width: 90px; 
+            position: relative;
+            height: 39px;
+            width: 85px; 
             background-color: map-get($color, primary-violet);
             border-top-left-radius: 100px; 
             border-top-right-radius: 100px;
@@ -27,15 +32,14 @@
         }
         &__meat {
             height:11px;
-            width:95px;
+            width:85px;
             background-color:map-get($color, tertiary-green);
             border-radius:20px;
             margin: 7px 0;
-            animation: 3s meat ease-in-out;
         }
         &__bot {
-            height: 41px;
-            width: 90px; 
+            height: 39px;
+            width: 85px; 
             background-color: map-get($color, secondary-pink);
             border-bottom-left-radius: 100px; 
             border-bottom-right-radius: 100px;
