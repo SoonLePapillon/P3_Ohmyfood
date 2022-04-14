@@ -9,10 +9,10 @@
     font-family: Roboto;
     scroll-behavior: smooth;
 }
-
 body {
     @include flex_column;
     @include justalign_center;
+    position: relative;
     margin: 0px;
 }
 

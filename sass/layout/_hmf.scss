@@ -17,13 +17,6 @@ header {
     }
 }
 
-#header {
-    position: sticky;
-    top:0;
-    z-index: 2000;
-    background-color: white
-}
-
 main {
     @include flex_column;
     width: 100%;

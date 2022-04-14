@@ -19,3 +19,91 @@ $color: (
     justify-content: center;
     align-items: center;
 }
+
+@mixin animation_appear {
+    animation: 1.5s appear;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+//// ANIMATIONS ////
+
+@keyframes fadeout {
+    from {
+        opacity: 100%;
+    }
+    to {
+        opacity: 0%;
+        visibility: hidden;
+    }
+}
+
+@keyframes buntop {
+    0% {
+    }
+    35% {
+    transform: translateY(-8px);
+    }
+    40% {
+        }
+    60% {
+    transform: translateY(0px);  
+    height: 30px;
+    }
+    75% {
+    transform: translateY(-4px);
+    }
+    100% {
+    transform: translateY(0px); 
+    height: 41px;
+    }
+}
+
+@keyframes bunbot {
+    0% {
+    }
+    35% {
+    transform: translateY(10px);
+    }
+    40% {
+    }
+    60% {
+    transform: translateY(0px);  
+    height: 30px;
+    }
+    75% {
+    transform: translateY(4px); 
+    }
+    100% {
+    transform: translateY(0px); 
+    height: 41px;
+    }
+}
+@keyframes meat {
+    0% {
+    }
+    20% {
+    transform: translateY(-12px);  
+    }
+    40% {
+    transform: translateY(12px);  
+    }
+    60% {
+    transform: translateY(-12px); 
+    }
+    80% {
+    transform: translateY(12px); 
+    }
+    100%{
+    }
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

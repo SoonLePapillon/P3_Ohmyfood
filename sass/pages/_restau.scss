@@ -61,7 +61,7 @@
             height: 70px;
             border-radius: 17px;
             box-shadow: 0px 0px 10px #888;
-            overflow: hidden; 
+            overflow: hidden; // permet de ne plus avoir le dépassement à droite, à commenter pour comprendre //
             &__text {
                 @include flex_column;
                 justify-content: center;
@@ -100,7 +100,7 @@
                     color: white;
                 }
             }
-            &:hover {
+            &:hover, &:active {
                 cursor: pointer;
                 .animation {
                     width: 75px;
@@ -114,6 +114,25 @@
         }
     }
 
+
+@for $i from 1 through 3 { // through inclut le dernier chiffre alors que "to" non //
+    .delay#{$i} {
+        @include animation_appear;
+        animation-delay: $i*0.2s;
+    }
+}
+
+@keyframes appear {
+    0% {
+    opacity: 0;
+    transform: translateY(20px);
+    }
+    100% {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
 
 
 .section__footer {
