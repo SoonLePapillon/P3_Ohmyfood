@@ -11,7 +11,7 @@
 }
 @keyframes rotation {
   from {
-    transform: rotate(0);
+    transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
@@ -23,7 +23,7 @@
   }
   60% {
     transform: translateY(0px);
-    height: 35px;
+    height: 25px;
   }
   75% {
     transform: translateY(-4px);
@@ -38,7 +38,7 @@
   }
   60% {
     transform: translateY(0px);
-    height: 35px;
+    height: 25px;
   }
   75% {
     transform: translateY(4px);
@@ -104,6 +104,7 @@ h3 {
   transition-duration: 0.5s;
 }
 .button:hover {
+  background: linear-gradient(176deg, #f88fda 0%, #9356dc 100%);
   cursor: pointer;
   transition-duration: 0.4s;
   box-shadow: 0px 0px 13px 2px rgb(112, 112, 112);
@@ -232,14 +233,16 @@ main {
   bottom: 0;
   z-index: 9999;
   opacity: 100%;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(33, 39, 65);
   animation: fadeout 1s forwards;
   animation-delay: 2s;
 }
 .loader__title {
-  font-family: Roboto;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 40px;
+  color: white;
+  text-align: center;
 }
 .loader .burger {
   height: 200px;
@@ -247,31 +250,31 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  animation: rotation 3s linear 0s 1 normal forwards;
+  animation: rotation 2.5s linear normal forwards;
 }
 .loader .burger__top {
   position: relative;
-  height: 39px;
+  height: 35px;
   width: 85px;
   background-color: #9356DC;
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
-  animation: 1.5s buntop 2 ease-in-out;
+  animation: 1.25s 0.2s buntop 2 ease-in-out;
 }
 .loader .burger__meat {
   height: 11px;
-  width: 85px;
+  width: 90px;
   background-color: #99E2D0;
-  border-radius: 20px;
+  border-radius: 30px;
   margin: 7px 0;
 }
 .loader .burger__bot {
-  height: 39px;
+  height: 35px;
   width: 85px;
   background-color: #FF79DA;
   border-bottom-left-radius: 100px;
   border-bottom-right-radius: 100px;
-  animation: 1.5s bunbot 2 ease-in-out;
+  animation: 1.25s 0.2s bunbot 2 ease-in-out;
 }
 
 .header__location {
@@ -584,6 +587,11 @@ aside {
   box-shadow: 0px 0px 10px #888;
   overflow: hidden;
 }
+#restau__section .section__listfood__card__title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 #restau__section .section__listfood__card__text {
   display: flex;
   flex-direction: column;
@@ -597,6 +605,8 @@ aside {
 #restau__section .section__listfood__card__text__desc {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  gap: 20px;
 }
 #restau__section .section__listfood__card__text__desc__title {
   font-size: 17px;

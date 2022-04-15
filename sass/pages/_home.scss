@@ -8,42 +8,44 @@
     bottom:0;
     z-index: 9999;
     opacity: 100%;
-    background-color: rgb(255, 255, 255);
-    animation: fadeout 1s forwards;
-    animation-delay: 2s;
+    background-color: rgb(33, 39, 65);
+    animation: fadeout 1s forwards; //durée du fondu //
+    animation-delay: 2s; // temps avant que le fondu arrive //
     &__title {
-        font-family:Roboto;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-weight: 400;
-        font-size: 30px;
+        font-size: 40px;
+        color:white;
+        text-align: center;
     }
     .burger {
         height: 200px;
         @include flex_column;
         @include justalign_center;
-        animation: rotation 3s linear 0s 1 normal forwards;
+        animation: rotation 2.5s linear normal forwards;
         &__top {
             position: relative;
-            height: 39px;
+            height: 35px;
             width: 85px; 
             background-color: map-get($color, primary-violet);
             border-top-left-radius: 100px; 
             border-top-right-radius: 100px;
-            animation: 1.5s buntop 2 ease-in-out;
+            animation: 1.25s 0.2s buntop 2 ease-in-out;
         }
         &__meat {
             height:11px;
-            width:85px;
+            width:90px;
             background-color:map-get($color, tertiary-green);
-            border-radius:20px;
+            border-radius:30px;
             margin: 7px 0;
         }
         &__bot {
-            height: 39px;
+            height: 35px;
             width: 85px; 
             background-color: map-get($color, secondary-pink);
             border-bottom-left-radius: 100px; 
             border-bottom-right-radius: 100px;
-            animation: 1.5s bunbot 2 ease-in-out;
+            animation: 1.25s 0.2s bunbot 2 ease-in-out;
         } 
     }  
 }

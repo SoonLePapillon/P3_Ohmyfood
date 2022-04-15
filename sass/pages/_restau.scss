@@ -62,6 +62,11 @@
             border-radius: 17px;
             box-shadow: 0px 0px 10px #888;
             overflow: hidden; // permet de ne plus avoir le dépassement à droite, à commenter pour comprendre //
+            &__title {
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
             &__text {
                 @include flex_column;
                 justify-content: center;
@@ -72,9 +77,11 @@
                 flex:1;
                 &__desc{
                     @include flex_row;
+                    align-items: center;
+                    gap:20px;
                     &__title {
                         font-size: 17px;
-                        max-width: calc(100% - 40px); // facultatif - espace entre le titre et le prix //
+                        max-width: calc(100% - 40px); // facultatif - espace le bloc (title + prix) et l'animation//
                         overflow: hidden;
                         white-space: nowrap;
                         text-overflow: ellipsis;

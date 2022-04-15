@@ -38,8 +38,8 @@ $color: (
     }
 }
 @keyframes rotation {
-    from {
-        transform: rotate(0);
+    from{   
+        transform: rotate(0deg);
     }
     to {
         transform: rotate(360deg);
@@ -54,7 +54,7 @@ $color: (
     }
     60% {
         transform: translateY(0px);  
-        height: 35px;
+        height: 25px;
     }
     75% {
         transform: translateY(-4px);
@@ -71,7 +71,7 @@ $color: (
     }
     60% {
         transform: translateY(0px);  
-        height: 35px;
+        height: 25px;
     }
     75% {
         transform: translateY(4px); 
