@@ -1,16 +1,11 @@
-// Le code est exécuté ligne par ligne ce qui veut dire que je dois import les variables avant le reste si je vais les réutiliser dans ce même reste //
-
-// Du coup, faut importer les utils en premier, c'est mieux.
+// Toujours importer les utils en premier vu que l'ordi exécute le code dans l'ordre 
 
 //Utils
 @import "utils/_varMix";
-
 //Base
 @import "base/_normalizer";
-
 //Layout
 @import "layout/_hmf";
-
 //Pages 
 @import "pages/_home";
 @import "pages/_restau";

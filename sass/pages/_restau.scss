@@ -1,5 +1,13 @@
+/// Animation d'apparition de la liste ///
+@for $i from 1 through 3 { // through inclut le dernier chiffre alors que "to" non
+    .delay#{$i} {
+        @include animation_appear;
+        animation-delay: $i*0.2s;
+    }
+}
+/// Animartion d'apparition liste - Fin ///
+
 #restau__header {
-    position: relative;
     .fa-arrow-left {
         color:black;
         font-size: 25px;
@@ -17,32 +25,35 @@
         }
     }
 }
-
-
 #restau__main {
     @include flex_column;
     @include justalign_center;
     width: 100%;
-    margin-top:-75px;
+    margin-top:-75px; // Pour décaler par-dessus la photo
     background-color: #f6f6f6;
     border-radius: 55px 55px 0 0;
     padding: 0;
     box-shadow: 0px 0px 25px -6px rgba(112, 112, 112, 1);
-    z-index:2;
-    .section__header {
+    z-index:2; // Pour s'affichier par-dessus la photo
+    header { 
         @include flex_row;
         justify-content: space-between;
-        margin-bottom: 20px;
-        padding: 20px 10% 0 10%;
+        padding: 20px 10% 20px 10%;
         > h1 {
             font-family: Shrikhand;
         }
     }
 }
 
-#restau__section {
+section {
     width: 100%;
     padding: 0 5%;
+    .section__catégorie {
+        display: block; // Il doit pouvoir se comporter comme un bloc pour l'animation d'apparition 
+        font-size:17px;
+        font-weight: 400;
+        margin-bottom: 0;
+    }
     .section__line {
         width: 40px;
         border-bottom: map-get($color, tertiary-green) 3px solid;
@@ -61,8 +72,8 @@
             height: 70px;
             border-radius: 17px;
             box-shadow: 0px 0px 10px #888;
-            overflow: hidden; // permet de ne plus avoir le dépassement à droite, à commenter pour comprendre //
-            &__title {
+            overflow: hidden; // permet de ne plus avoir le dépassement à droite, à commenter pour comprendre
+            &__h3 {
                 overflow: hidden;
                 white-space: nowrap;
                 text-overflow: ellipsis;
@@ -71,7 +82,7 @@
                 @include flex_column;
                 justify-content: center;
                 width: 100%;
-                min-width: 0; // important à définir pour que l'animation prennent la largeur qu'elle veut //
+                min-width: 0; // important à définir pour que l'animation du check prennent la largeur qu'elle veut
                 gap:3px;
                 padding: 0 1rem;
                 flex:1;
@@ -79,13 +90,13 @@
                     @include flex_row;
                     align-items: center;
                     gap:20px; // espace minimum entre le titre et le prix //
-                    &__title {
+                    &__p {
                         font-size: 17px;
-                        max-width: calc(100% - 40px); // facultatif - espace le bloc (title + prix) et l'animation//
+                        max-width: calc(100% - 40px); // facultatif - espace le bloc (title + prix) et l'animation
                         overflow: hidden;
                         white-space: nowrap;
                         text-overflow: ellipsis;
-                        flex: 1; // prend l'espace dispo s'il y en a en prio - inutile si j'avais mis un justify-content:space-between au niveau du bloc parent//
+                        flex: 1; // prend l'espace dispo s'il y en a en prio - inutile si j'avais mis un justify-content:space-between au niveau du bloc parent
                     }
                     &__price{
                         margin: 0;
@@ -100,7 +111,7 @@
                 width: 0;
                 height: 100%;
                 background-color: map-get($color, tertiary-green);
-                border-radius:0 17px 17px 10;
+                border-radius:0 17px 17px 0;
                 transition: all 350ms linear;
                 i {
                     font-size: 26px;
@@ -122,39 +133,12 @@
     }
 
 
-@for $i from 1 through 3 { // through inclut le dernier chiffre alors que "to" non //
-    .delay#{$i} {
-        @include animation_appear;
-        animation-delay: $i*0.2s;
-    }
-}
-
-@keyframes appear {
-    0% {
-    opacity: 0;
-    transform: translateY(20px);
-    }
-    100% {
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0);
-    }
-}
-
-
 .section__footer {
     @include flex_column;
     @include justalign_center;
     width: 100%;
     margin:60px 0px 80px 0px;
 }
-
-#restau__header {
-    .header__photo {
-        height: 300px;
-    }
-}
-
 
 @media all and (min-width:501px) {
     #restau__header {

@@ -13,7 +13,7 @@ body {
     @include flex_column;
     @include justalign_center;
     position: relative;
-    margin: 0px;
+    margin: 0;
 }
 
 a {
@@ -29,11 +29,18 @@ h1 {
     font-weight: 500;
     margin: 0;
 }
+
 h2 {
-    font-size: 18px;
+    font-size : 23px;
+    font-weight: 500;
+    margin: 0;
+}
+
+h3 {
+    font-size: 17px;
     margin:0;
 }
-h3 {
+p {
     font-size: 17px;
     font-weight: 300;
     margin:0;
@@ -61,10 +68,8 @@ h3 {
 }
 
 .heart {
-    @include flex_column;
-    @include justalign_center;
     font-size: 25px;
-    i:hover{
+    &:hover{
         font-weight: bold;
         background: map-get($color, pink-gradient);
         -webkit-background-clip: text;

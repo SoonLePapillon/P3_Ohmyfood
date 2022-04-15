@@ -1,9 +1,12 @@
+/// VARIABLES ///
 $color: (
     primary-violet: #9356DC,
     secondary-pink: #FF79DA,
     tertiary-green: #99E2D0,
     pink-gradient : linear-gradient(176deg, #ff79da 0%, #9356dc 100%),
 );
+
+/// MIXINS ///
 @mixin flex_column {
     display: flex;
     flex-direction: column;
@@ -19,20 +22,19 @@ $color: (
     align-items: center;
 }
 
-@mixin animation_appear {
-    animation: 1.5s appear;
-    animation-fill-mode: forwards;
-    visibility: hidden;
-}
-
-@mixin burgerbun {
+@mixin burgerbun { // Dimensions des pains burger
     height: 35px;
     width: 85px; 
 }
 
-//// ANIMATIONS ////
+@mixin animation_appear {
+    animation: 1.5s restau_appear;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
 
-@keyframes fondu {
+/// KEYFRAMES ///
+@keyframes fondu { // Fondu du loader 
     from {
         opacity: 100%;
     }
@@ -41,6 +43,7 @@ $color: (
         visibility: hidden;
     }
 }
+
 @keyframes rotation {
     from{   
         transform: rotate(0deg);
@@ -82,6 +85,18 @@ $color: (
     }
     100% {
         transform: translateY(0px); 
+    }
+}
+
+@keyframes restau_appear { // Animation des listes 
+    0% {
+    opacity: 0;
+    transform: translateY(50px);
+    }
+    100% {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
     }
 }
 

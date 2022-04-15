@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/5fc35d441e.js" crossorigin="anonymous"></script>
     <link href="css/style.css" rel="stylesheet">
-    <title>Ohmyfood</title>
+    <title>Ohmyfood - Accueil</title>
 </head>
 <body>
     <div class="loader">
@@ -19,103 +19,102 @@
         </div>
     </div>
     <header>
-        <div class="header__logo" ><img src="ressources/logo/ohmyfood.png" alt="ohmyfood" href="#"></div>
+        <div class="header__logo" ><img src="ressources/logo/ohmyfood.png" alt="ohmyfood"></div>
         <div class="header__location">
             <i class="fas fa-map-marker-alt"></i><p>Paris, Belleville</p>
         </div>
-        <main class="header_main">
+        <div class="header_main">
             <h1> Réservez le menu qui vous convient </h1>
             <span>Découvrez des restaurants d'exception, sélectionnés par nos soins.</span>
             <a class="button" href="#section__title">Explorer nos restaurants</a>
-        </main>
+        </div>
     </header>
     <main id="index__main">
-            <aside>
-                <h1>Fonctionnement</h1>
-                <ul class="aside__helper">
+        <aside>
+            <h2>Fonctionnement</h2>
+            <ul class="aside__helper">
+                <li class="aside__helper__card">
+                    <span class="aside__helper__card__num">1</span>
+                    <div class="aside__helper__card__text">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <h3>Choisissez un restaurant</h3>
+                    </div>
+                </li>
+                <li class="aside__helper__card">
+                    <span class="aside__helper__card__num">2</span>
+                    <div class="aside__helper__card__text">
+                        <i class="fa-solid fa-list"></i>
+                        <h3> Composez votre menu </h3>
+                    </div>
+                </li>
                     <li class="aside__helper__card">
-                        <span class="aside__helper__card__num">1</span>
+                        <span class="aside__helper__card__num">3</span>
                         <div class="aside__helper__card__text">
-                            <i class="fa-solid fa-mobile-screen-button"></i>
-                            <p>Choisissez un restaurant</p>
+                            <i class="fa-solid fa-store"></i>
+                            <h3> Dégustez au restaurant </h3>
                         </div>
-                    </li>
-                    <li class="aside__helper__card">
-                        <span class="aside__helper__card__num">2</span>
-                        <div class="aside__helper__card__text">
-                            <i class="fa-solid fa-list"></i>
-                            <p> Composez votre menu </p>
+                </li>
+            </ul>
+        </aside>
+        <section id="index__section">
+            <h2 id="section__title">Restaurants</h2>
+            <div class="section__main">
+                <div class="section__main__card">
+                    <a href="html/palette.html" class="section__main__card__picture">
+                        <img src="ressources/restaurants/restaurant1.jpg" alt="restaurant">
+                        <span class="section__main__card__new">Nouveau</span>
+                    </a>
+                    <div class="section__main__card__descp">
+                        <div class="section__main__card__descp__titles">
+                            <h3>La palette du goût</h3>
+                            <p>Ménilmontant</p>
                         </div>
-                    </li>
-                        <li class="aside__helper__card">
-                            <span class="aside__helper__card__num">3</span>
-                            <div class="aside__helper__card__text">
-                                <i class="fa-solid fa-store"></i>
-                                <p> Dégustez au restaurant </p>
-                            </div>
-                    </li>
-                </ul>
-            </aside>
-            <section id="index__section">
-                <h1 id="section__title">Restaurants</h1>
-                <main class="section__main">
-                    <div class="section__main__card">
-                        <a href="html/palette.html" class="section__main__card__picture">
-                            <img src="ressources/restaurants/restaurant1.jpg" alt="restaurant">
-                            <span class="section__main__card__new">Nouveau</span>
-                        </a>
-                        <div class="section__main__card__descp">
-                            <div class="section__main__card__descp__titles">
-                                <h2>La palette du goût</h2>
-                                <h3>Ménilmontant</h3>
-                            </div>
-                            <div class="section__main__card__descp__icn"><i class="fa-regular fa-heart"></i></div>
-                            
-                        </div>
+                        <div class="section__main__card__descp__icn"><i class="fa-regular fa-heart heart"></i></div>
+                        
                     </div>
-                    <div class="section__main__card">
-                        <a href="html/note.html" class="section__main__card__picture">
-                            <img src="ressources/restaurants/restaurant2.jpg" alt="restaurant">
-                            <span class="section__main__card__new">Nouveau</span>
-                        </a>
-                        <div class="section__main__card__descp">
-                            <div class="section__main__card__descp__titles">
-                                <h2>La note enchantée</h2>
-                                <h3>Charonne</h3>
-                            </div>
-                            <div class="heart"><i class="fa-regular fa-heart"></i></div>
-                            
+                </div>
+                <div class="section__main__card">
+                    <a href="html/note.html" class="section__main__card__picture">
+                        <img src="ressources/restaurants/restaurant2.jpg" alt="restaurant">
+                        <span class="section__main__card__new">Nouveau</span>
+                    </a>
+                    <div class="section__main__card__descp">
+                        <div class="section__main__card__descp__titles">
+                            <h3>La note enchantée</h3>
+                            <p>Charonne</p>
                         </div>
+                        <div class="section__main__card__descp__icn"><i class="fa-regular fa-heart heart"></i></div>
+                        
                     </div>
-                    <div class="section__main__card">
-                        <a href="html/française.html" class="section__main__card__picture">
-                            <img src="ressources/restaurants/restaurant3.jpg" alt="restaurant">
-                        </a>
-                        <div class="section__main__card__descp">
-                            <div class="section__main__card__descp__titles">
-                                <h2>À la française</h2>
-                                <h3>Cité Rouge</h3>
-                            </div>
-                            <div class="section__main__card__descp__icn"><i class="fa-regular fa-heart"></i></div>
-                            
+                </div>
+                <div class="section__main__card">
+                    <a href="html/française.html" class="section__main__card__picture">
+                        <img src="ressources/restaurants/restaurant3.jpg" alt="restaurant">
+                    </a>
+                    <div class="section__main__card__descp">
+                        <div class="section__main__card__descp__titles">
+                            <h3>À la française</h3>
+                            <p>Cité Rouge</p>
                         </div>
+                        <div class="section__main__card__descp__icn"><i class="fa-regular fa-heart heart"></i></div>
+                        
                     </div>
-                    <div class="section__main__card">
-                        <a href="html/delice.html" class="section__main__card__picture">
-                            <img src="ressources/restaurants/restaurant4.jpg" alt="restaurant">
-                        </a>
-                        <div class="section__main__card__descp">
-                            <div class="section__main__card__descp__titles">
-                                <h2>Le délice des sens</h2>
-                                <h3>Folie-Méricourt</h3>
-                            </div>
-                            <div class="section__main__card__descp__icn"><i class="fa-regular fa-heart"></i></div>
-                            
+                </div>
+                <div class="section__main__card">
+                    <a href="html/delice.html" class="section__main__card__picture">
+                        <img src="ressources/restaurants/restaurant4.jpg" alt="restaurant">
+                    </a>
+                    <div class="section__main__card__descp">
+                        <div class="section__main__card__descp__titles">
+                            <h3>Le délice des sens</h3>
+                            <p>Folie-Méricourt</p>
                         </div>
+                        <div class="section__main__card__descp__icn"><i class="fa-regular fa-heart heart"></i></div>
+                        
                     </div>
-                </main>
-            </section>
-        </main>
+                </div>
+            </div>
+        </section>
     </main>
     <footer id="footer">
         <h1>ohmyfood</h1>
@@ -128,10 +127,3 @@
     </footer>
 </body>
 </html>
-
-    <!-- 
-    "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./css/style.css",
-    "prefix": "postcss style.css --use autoprefixer -d prefixed"
-  },
-    ou "sass": "sass --watch sass/main.scss:css/style.css" car ./ sert juste à mieux visualiser tandis que ../ sert à remonter à la racine -->
