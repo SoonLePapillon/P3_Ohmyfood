@@ -68,7 +68,7 @@ h3 {
         font-weight: bold;
         background: map-get($color, pink-gradient);
         -webkit-background-clip: text;
-        // l'arrière plan est limite (rogné) au texte en premier plan donc l'icone)
+        // l'arrière plan est limité (rogné) au texte en premier plan donc l'icone)
         -webkit-text-fill-color: transparent;
         // défini la couleur utilisée pour dessiner le contenu des lettres. Par défaut c'est la propriété color 
     }

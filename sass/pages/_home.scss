@@ -1,15 +1,15 @@
 .loader {
     @include flex_column;
     @include justalign_center;
+    position:fixed;
     width: 100%;
     height: 100%;
-    position:fixed;
     top:0;
     bottom:0;
     z-index: 9999;
     opacity: 100%;
     background-color: rgb(33, 39, 65);
-    animation: fadeout 1s forwards; //durée du fondu //
+    animation: fondu 1s forwards; //durée du fondu //
     animation-delay: 2s; // temps avant que le fondu arrive //
     &__title {
         font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -24,9 +24,7 @@
         @include justalign_center;
         animation: rotation 2.5s linear normal forwards;
         &__top {
-            position: relative;
-            height: 35px;
-            width: 85px; 
+            @include burgerbun;
             background-color: map-get($color, primary-violet);
             border-top-left-radius: 100px; 
             border-top-right-radius: 100px;
@@ -40,8 +38,7 @@
             margin: 7px 0;
         }
         &__bot {
-            height: 35px;
-            width: 85px; 
+            @include burgerbun;
             background-color: map-get($color, secondary-pink);
             border-bottom-left-radius: 100px; 
             border-bottom-right-radius: 100px;

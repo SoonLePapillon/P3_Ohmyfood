@@ -78,7 +78,7 @@
                 &__desc{
                     @include flex_row;
                     align-items: center;
-                    gap:20px;
+                    gap:20px; // espace minimum entre le titre et le prix //
                     &__title {
                         font-size: 17px;
                         max-width: calc(100% - 40px); // facultatif - espace le bloc (title + prix) et l'animation//
