@@ -1,3 +1,5 @@
+@use "../utils/varMix" as *;
+
 .loader {
     @include flex_column;
     @include justalign_center;

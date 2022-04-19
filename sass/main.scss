@@ -1,14 +1,14 @@
-// Toujours importer les utils en premier vu que l'ordi exécute le code dans l'ordre 
+// l'ordre a peu d'importance avec @use, contrairement à import
 
 //Utils
-@import "utils/_varMix";
+@use "utils/varMix";
 //Base
-@import "base/_normalizer";
+@use "base/_normalizer";
 //Layout
-@import "layout/_hmf";
+@use "layout/hmf";
 //Pages 
-@import "pages/_home";
-@import "pages/_restau";
+@use "pages/home";
+@use "pages/restau";
 
 
 

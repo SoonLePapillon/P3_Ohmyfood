@@ -1,3 +1,5 @@
+@use "../utils/varMix" as *;
+
 /// Animation d'apparition de la liste ///
 @for $i from 1 through 3 { // through inclut le dernier chiffre alors que "to" non
     .delay#{$i} {

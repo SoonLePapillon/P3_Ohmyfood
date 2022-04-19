@@ -1,3 +1,5 @@
+@use "../utils/varMix" as *;
+
 header {
     @include flex_column;
     @include justalign_center;
