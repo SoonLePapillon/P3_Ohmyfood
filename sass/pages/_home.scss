@@ -10,15 +10,17 @@
     bottom:0;
     z-index: 9999;
     opacity: 100%;
-    -webkit-backdrop-filter: blur(15px);
-    backdrop-filter: blur(15px); // effet de flou 
+    background-color: rgb(45, 39, 114);
+    // Effet de flou - Ne fonctionne pas sur Firefox 
+    // -webkit-backdrop-filter: blur(15px);
+    // backdrop-filter: blur(15px);
     animation: fondu 1s forwards; // durée du fondu
     animation-delay: 2s; // temps avant que le fondu arrive
     &__title {
         font-family:'Arial';
         font-weight: 400;
         font-size: 40px;
-        color:rgba(0, 0, 0, 0.884);
+        color:#FFF;
         text-align: center;
     }
     .burger {
