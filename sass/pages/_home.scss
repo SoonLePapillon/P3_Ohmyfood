@@ -10,6 +10,7 @@
     bottom:0;
     z-index: 9999;
     opacity: 100%;
+    -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px); // effet de flou 
     animation: fondu 1s forwards; // durée du fondu
     animation-delay: 2s; // temps avant que le fondu arrive
