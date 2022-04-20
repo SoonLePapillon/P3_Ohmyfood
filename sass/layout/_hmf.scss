@@ -1,5 +1,5 @@
 @use "../utils/varMix" as *;
-
+////////////////////////////////////////
 header {
     @include flex_column;
     @include justalign_center;
@@ -16,12 +16,10 @@ header {
         }
     }
 }
-
 main {
     @include flex_column;
     width: 100%;
 }
-
 #footer {
     @include flex_column;
     justify-content: center;
@@ -36,12 +34,11 @@ main {
         color:white;
     }
     .footer__text {
-        margin-top:30px;
         @include flex_column;
         justify-content: flex-start;
         align-items: flex-start;
         gap: 5px;
-        margin-top:0;
+        margin-top:0px;
         &__icn {
             font-weight: 500;
         }
@@ -50,48 +47,28 @@ main {
         display: flex;
         flex-wrap: nowrap;
         color: white;
-        gap:5px;
+        gap:10px;
         font-weight: 300;
-    }
-    a:hover {
-        color: map-get($color, primary-violet);
     }
     .fa-solid {
         width: 20px;
     }
+    a:hover {
+        color: map-get($color, primary-violet);
+    }
 }
-
 /////////////////////////////////////////
 ///////////// MEDIA QUERIES /////////////
 /////////////////////////////////////////
-
-
-
 @media all and (min-width:800px) {
     #footer {
-        @include flex_column;
         @include justalign_center;
         align-items: center;
-        width: 100%;
-        padding: 20px 0 30px 0px;
         .footer__text {
             @include flex_row;
             justify-content: space-between;
             align-items: center;
             width: 80%;
-        }
-        a {
-            gap:10px;
-        }
-    }
-}
-@media all and (min-width:1070px) {
-    #footer {
-        .footer__text {
-            width: 70%;
-        }
-        a {
-            gap:15px;
         }
     }
 }

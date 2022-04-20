@@ -1,6 +1,6 @@
 @use "../utils/varMix" as *;
-
-/// Animation d'apparition de la liste ///
+////////////////////////////////////////
+/// Animation d'apparition de la liste
 @for $i from 1 through 3 { // through inclut le dernier chiffre alors que "to" non
     .delay#{$i} {
         @include animation_appear;
@@ -8,14 +8,13 @@
     }
 }
 /// Animartion d'apparition liste - Fin ///
-
 #restau__header {
     .fa-arrow-left {
-        color:black;
-        font-size: 25px;
         position: absolute;
         top: 15px;
         left:20px;
+        color:black;
+        font-size: 25px;
     }
     .header__photo {
         width: 100%;
@@ -31,19 +30,16 @@
     @include flex_column;
     @include justalign_center;
     width: 100%;
-    margin-top:-75px; // Pour décaler par-dessus la photo
     background-color: #f6f6f6;
     border-radius: 55px 55px 0 0;
+    margin-top:-75px; // Pour décaler par-dessus la photo
     padding: 0;
     box-shadow: 0px 0px 25px -6px rgba(112, 112, 112, 1);
-    z-index:2; // Pour s'affichier par-dessus la photo
+    z-index:2; // Pour s'afficher par-dessus la photo
     header { 
         @include flex_row;
         justify-content: space-between;
         padding: 20px 10% 20px 10%;
-        > h1 {
-            font-family: Shrikhand;
-        }
     }
 }
 
@@ -77,7 +73,7 @@ section {
             overflow: hidden; // permet de ne plus avoir le dépassement à droite, à commenter pour comprendre
             &__h3 {
                 overflow: hidden;
-                white-space: nowrap;
+                white-space: nowrap; //white-space permet de décrire la façon dont les blancs sont gérés au sein de l'élément. Ca concerne les espaces et les sauts de ligne. Ici, ça force le text à rester sur une ligne
                 text-overflow: ellipsis;
             }
             &__text {
@@ -98,7 +94,7 @@ section {
                         overflow: hidden;
                         white-space: nowrap;
                         text-overflow: ellipsis;
-                        flex: 1; // prend l'espace dispo s'il y en a en prio - inutile si j'avais mis un justify-content:space-between au niveau du bloc parent
+                        flex: 1; // prend l'espace dispo s'il y en a en prio - inutile si j'avais mis un justify-content:space-between sans gap au niveau du bloc parent
                     }
                     &__price{
                         margin: 0;
@@ -133,15 +129,15 @@ section {
             }
         }
     }
-
-
 .section__footer {
     @include flex_column;
     @include justalign_center;
     width: 100%;
     margin:60px 0px 80px 0px;
 }
-
+/////////////////////////////////////////
+///////////// MEDIA QUERIES /////////////
+/////////////////////////////////////////
 @media all and (min-width:501px) {
     #restau__header {
         .header__photo {
