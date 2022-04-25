@@ -38,8 +38,12 @@
     z-index:2; // Pour s'afficher par-dessus la photo
     header { 
         @include flex_row;
-        justify-content: space-between;
+        justify-content: flex-start;
+        position: relative;
         padding: 20px 10% 20px 10%;
+    }
+    .heart {
+        right: 10%;
     }
 }
 

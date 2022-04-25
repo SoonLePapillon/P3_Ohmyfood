@@ -62,11 +62,29 @@ p {
     }
 }
 .heart {
+    position: absolute;
     font-size: 25px;
-    &:hover{
-        font-weight: bold;
-        background: map-get($color, pink-gradient);
-        -webkit-background-clip: text; // l'arrière plan est limité (rogné) au texte en premier plan donc l'icone)
-        -webkit-text-fill-color: transparent; // défini la couleur utilisée pour dessiner le contenu des lettres. Par défaut c'est la propriété color 
+}
+
+.void {
+    z-index:5; // Le position:absolute force un z-index
+    opacity: 1;
+    &:hover {
+        opacity: 0;
+        transition: 0.3s ease-in-out;
     }
+    &:hover + .full {
+        opacity: 1;
+        transition: 0.3s ease-in-out;
+    }
+}
+
+.full {
+    z-index:4;
+    opacity:0;
+    font-weight: bold;
+    color: transparent; // Pour laisser place au bg
+    background: map-get($color, pink-gradient);
+    -webkit-background-clip: text; // Bg rogné au texte
+    
 }

@@ -209,13 +209,11 @@ aside {
         &__titles {
             @include flex_column;
             justify-content: center;
-            width: 95%;
             gap:3px;
         }
-        &__icn {
-            @include flex_column;
-            @include justalign_center;
-            width: 30px;
+        .heart {
+            bottom:25px;
+            right: 15px;
         }
     }
 }
