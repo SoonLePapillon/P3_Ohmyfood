@@ -10,7 +10,7 @@
 <body class="stackedit">
   <div class="stackedit__html"><h1 id="p3---ohmyfood">P3 - OhMyFood!</h1>
 <p><strong>FR</strong><br>
-OhMyFood! est le deuxième site que j’ai réalisé. Il s’agit d’un projet dans le cadre de la formation  <strong>Développeur Web</strong>  d’OpenClassrooms. L’objectif était de reproduire au mieux une maquette qui nous a été fournie en HTML / CSS.<br>
+OhMyFood! est le deuxième site que j’ai réalisé. Il s’agit d’un projet dans le cadre de la formation Développeur Web d’OpenClassrooms. L’objectif était de reproduire au mieux une maquette qui nous a été fournie en HTML / CSS.<br>
 Contrairement à mon premier projet <a href="https://github.com/soonbtf/P2_Booki">Booki</a>, il était obligatoire d’utiliser un <strong>préprocesseur CSS</strong> et des animations ont dû être réalisées.</p>
 <p>Lien direct : <a href="https://soonbtf.github.io/P3_Ohmyfood/">https://soonbtf.github.io/P3_Ohmyfood/</a></p>
 <p><strong>EN</strong><br>
