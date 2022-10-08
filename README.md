@@ -14,7 +14,7 @@ OhMyFood! est le deuxième site que j’ai réalisé. Il s’agit d’un projet 
 Contrairement à mon premier projet <a href="https://github.com/soonbtf/P2_Booki">Booki</a>, il était obligatoire d’utiliser un <strong>préprocesseur CSS</strong> et des animations ont dû être réalisées.</p>
 <p>Lien direct : <a href="https://soonbtf.github.io/P3_Ohmyfood/">https://soonbtf.github.io/P3_Ohmyfood/</a></p>
 <p><strong>EN</strong><br>
-OhMyFood! is the second website I’ve created. This a project as part of the OpenClassrooms Web Developer training. The objective was to reproduce as well as possible a model which was provided to us in HTML / CSS.<br>
+OhMyFood! is the second website I’ve created. This is a project that's part of the OpenClassrooms Web Developer training. The objective was to reproduce as well as possible a model which was provided to us in HTML / CSS.<br>
 Unlike my first project <a href="https://github.com/soonbtf/P2_Booki">Booki</a>, we had to use a <strong>CSS preprocessor</strong> and animations had to be made.</p>
 <p>Direct link :  <a href="https://soonbtf.github.io/P3_Ohmyfood/">https://soonbtf.github.io/P3_Ohmyfood/</a></p>
 </div>
