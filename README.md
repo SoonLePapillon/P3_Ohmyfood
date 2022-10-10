@@ -1,23 +1,13 @@
-﻿<!DOCTYPE html>
-<html>
+# P3 - OhMyFood!
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackedit.io/style.css" />
-</head>
+**Présentation**
+OhMyFood! est le deuxième site que j’ai réalisé dans le cadre de la formation  Développeur Web  d’OpenClassrooms. Il permet de consulter le menu de différents restaurants gastronomiques et d'y passer commande. L’objectif était de reproduire au mieux une maquette qui nous a été fournie en HTML / CSS. 
+Contrairement à mon premier projet [Booki](https://github.com/soonbtf/P2_Booki), il était obligatoire d'utiliser un **préprocesseur CSS** et des animations ont dû être réalisées. 
 
-<body class="stackedit">
-  <div class="stackedit__html"><h1 id="p3---ohmyfood">P3 - OhMyFood!</h1>
-<p><strong>FR</strong><br>
-OhMyFood! est le deuxième site que j’ai réalisé. Il s’agit d’un projet dans le cadre de la formation Développeur Web d’OpenClassrooms. L’objectif était de reproduire au mieux une maquette qui nous a été fournie en HTML / CSS.<br>
-Contrairement à mon premier projet <a href="https://github.com/soonbtf/P2_Booki">Booki</a>, il était obligatoire d’utiliser un <strong>préprocesseur CSS</strong> et des animations ont dû être réalisées.</p>
-<p>Lien direct : <a href="https://soonbtf.github.io/P3_Ohmyfood/">https://soonbtf.github.io/P3_Ohmyfood/</a></p>
-<p><strong>EN</strong><br>
-OhMyFood! is the second website I’ve created. This is a project that's part of the OpenClassrooms Web Developer training. The objective was to reproduce as well as possible a model which was provided to us in HTML / CSS.<br>
-Unlike my first project <a href="https://github.com/soonbtf/P2_Booki">Booki</a>, we had to use a <strong>CSS preprocessor</strong> and animations had to be made.</p>
-<p>Direct link :  <a href="https://soonbtf.github.io/P3_Ohmyfood/">https://soonbtf.github.io/P3_Ohmyfood/</a></p>
-</div>
-</body>
+Lien direct :[https://soonbtf.github.io/P3_Ohmyfood/](https://soonbtf.github.io/P3_Ohmyfood/)
 
-</html>
+**Introduction**
+OhMyFood! is the second website I made that's part of the OpenClassrooms Web Developer training. It allows you to consult the menu of different gourmet restaurants and to place an order. The objective was to reproduce as well as possible a model that was provided to us in HTML / CSS.
+Unlike my first project [Booki](https://github.com/soonbtf/P2_Booki), it was mandatory to use a **CSS preprocessor** and animations had to be made.
+
+Direct link :  [https://soonbtf.github.io/P3_Ohmyfood/](https://soonbtf.github.io/P3_Ohmyfood/)
