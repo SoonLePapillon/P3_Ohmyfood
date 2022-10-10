@@ -5,6 +5,7 @@ OhMyFood! est le deuxième site que j’ai réalisé dans le cadre de la formati
 Contrairement à mon premier projet [Booki](https://github.com/soonbtf/P2_Booki), il était obligatoire d'utiliser un **préprocesseur CSS** et des animations ont dû être réalisées. 
 
 Lien direct :[https://soonbtf.github.io/P3_Ohmyfood/](https://soonbtf.github.io/P3_Ohmyfood/)
+___
 
 **Introduction**
 OhMyFood! is the second website I made that's part of the OpenClassrooms Web Developer training. It allows you to consult the menu of different gourmet restaurants and to place an order. The objective was to reproduce as well as possible a model that was provided to us in HTML / CSS.
