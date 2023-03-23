@@ -1,131 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="css/style.css" rel="stylesheet">
-    <title>Ohmyfood - Accueil</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+    <title>Eat Marker - Accueil</title>
+  </head>
+  <body>
     <div class="loader">
-        <span class="loader__title">Chargement en cours...</span>
-        <div class="burger">
-            <div class="burger__top"></div>
-            <div class="burger__meat"></div>
-            <div class="burger__bot">
-            </div>
-        </div>
+      <span class="loader__title">Chargement en cours...</span>
+      <div class="burger">
+        <div class="burger__top"></div>
+        <div class="burger__meat"></div>
+        <div class="burger__bot"></div>
+      </div>
     </div>
     <header>
-        <div class="header__logo" >
-            <img src="ressources/logo/ohmyfood.png" alt="ohmyfood">
-        </div>
-        <div class="header__location">
-            <i class="fas fa-map-marker-alt"></i><p>Paris, Belleville</p>
-        </div>
-        <div class="header_main">
-            <h1> Réservez le menu qui vous convient </h1>
-            <span>Découvrez des restaurants d'exception, sélectionnés par nos soins.</span>
-            <a class="button" href="#section__title">Explorer nos restaurants</a>
-        </div>
+      <div class="header__logo">
+        <span>Eat Marker</span>
+      </div>
+      <div class="header__location">
+        <i class="fas fa-map-marker-alt"></i>
+        <p>Paris, Belleville</p>
+      </div>
+      <div class="header_main">
+        <h1>Réservez le menu qui vous convient</h1>
+        <span
+          >Découvrez des restaurants d'exception, sélectionnés par nos
+          soins.</span
+        >
+        <a class="button" href="#section__title">Explorer nos restaurants</a>
+      </div>
     </header>
     <main id="index__main">
-        <aside>
-            <h2>Fonctionnement</h2>
-            <ul class="aside__helper">
-                <li class="aside__helper__card">
-                    <span class="aside__helper__card__num">1</span>
-                    <div class="aside__helper__card__text">
-                        <i class="fa-solid fa-mobile-screen-button"></i>
-                        <h3>Choisissez un restaurant</h3>
-                    </div>
-                </li>
-                <li class="aside__helper__card">
-                    <span class="aside__helper__card__num">2</span>
-                    <div class="aside__helper__card__text">
-                        <i class="fa-solid fa-list"></i>
-                        <h3> Composez votre menu </h3>
-                    </div>
-                </li>
-                    <li class="aside__helper__card">
-                        <span class="aside__helper__card__num">3</span>
-                        <div class="aside__helper__card__text">
-                            <i class="fa-solid fa-store"></i>
-                            <h3> Dégustez au restaurant </h3>
-                        </div>
-                </li>
-            </ul>
-        </aside>
-        <section id="index__section">
-            <h2 id="section__title">Restaurants</h2>
-            <div class="section__main">
-                <div class="section__main__card">
-                    <a href="html/palette.html" class="section__main__card__picture">
-                        <img src="ressources/restaurants/restaurant1.jpg" alt="restaurant">
-                        <span class="section__main__card__new">Nouveau</span>
-                    </a>
-                    <div class="section__main__card__descp">
-                        <div class="section__main__card__descp__titles">
-                            <h3>La palette du goût</h3>
-                            <p>Ménilmontant</p>
-                        </div>
-                        <i class="fa-regular fa-heart heart void"></i>
-                        <i class="fa-regular fa-heart heart full"></i>
-                    </div>
-                </div>
-                <div class="section__main__card">
-                    <a href="html/note.html" class="section__main__card__picture">
-                        <img src="ressources/restaurants/restaurant2.jpg" alt="restaurant">
-                        <span class="section__main__card__new">Nouveau</span>
-                    </a>
-                    <div class="section__main__card__descp">
-                        <div class="section__main__card__descp__titles">
-                            <h3>La note enchantée</h3>
-                            <p>Charonne</p>
-                        </div>
-                        <i class="fa-regular fa-heart heart void"></i>
-                        <i class="fa-regular fa-heart heart full"></i>
-                    </div>
-                </div>
-                <div class="section__main__card">
-                    <a href="html/française.html" class="section__main__card__picture">
-                        <img src="ressources/restaurants/restaurant3.jpg" alt="restaurant">
-                    </a>
-                    <div class="section__main__card__descp">
-                        <div class="section__main__card__descp__titles">
-                            <h3>À la française</h3>
-                            <p>Cité Rouge</p>
-                        </div>
-                        <i class="fa-regular fa-heart heart void"></i>
-                        <i class="fa-regular fa-heart heart full"></i>
-                    </div>
-                </div>
-                <div class="section__main__card">
-                    <a href="html/delice.html" class="section__main__card__picture">
-                        <img src="ressources/restaurants/restaurant4.jpg" alt="restaurant">
-                    </a>
-                    <div class="section__main__card__descp">
-                        <div class="section__main__card__descp__titles">
-                            <h3>Le délice des sens</h3>
-                            <p>Folie-Méricourt</p>
-                        </div>
-                        <i class="fa-regular fa-heart heart void"></i>
-                        <i class="fa-regular fa-heart heart full"></i>
-                    </div>
-                </div>
+      <aside>
+        <h2>Fonctionnement</h2>
+        <ul class="aside__helper">
+          <li class="aside__helper__card">
+            <span class="aside__helper__card__num">1</span>
+            <div class="aside__helper__card__text">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+              <h3>Choisissez un restaurant</h3>
             </div>
-        </section>
+          </li>
+          <li class="aside__helper__card">
+            <span class="aside__helper__card__num">2</span>
+            <div class="aside__helper__card__text">
+              <i class="fa-solid fa-list"></i>
+              <h3>Composez votre menu</h3>
+            </div>
+          </li>
+          <li class="aside__helper__card">
+            <span class="aside__helper__card__num">3</span>
+            <div class="aside__helper__card__text">
+              <i class="fa-solid fa-store"></i>
+              <h3>Dégustez au restaurant</h3>
+            </div>
+          </li>
+        </ul>
+      </aside>
+      <section id="index__section">
+        <h2 id="section__title">Restaurants</h2>
+        <div class="section__main">
+          <div class="section__main__card">
+            <a href="html/palette.html" class="section__main__card__picture">
+              <img
+                src="ressources/restaurants/restaurant1.jpg"
+                alt="restaurant"
+              />
+              <span class="section__main__card__new">Nouveau</span>
+            </a>
+            <div class="section__main__card__descp">
+              <div class="section__main__card__descp__titles">
+                <h3>La palette du goût</h3>
+                <p>Ménilmontant</p>
+              </div>
+              <i class="fa-regular fa-heart heart void"></i>
+              <i class="fa-regular fa-heart heart full"></i>
+            </div>
+          </div>
+          <div class="section__main__card">
+            <a href="html/note.html" class="section__main__card__picture">
+              <img
+                src="ressources/restaurants/restaurant2.jpg"
+                alt="restaurant"
+              />
+              <span class="section__main__card__new">Nouveau</span>
+            </a>
+            <div class="section__main__card__descp">
+              <div class="section__main__card__descp__titles">
+                <h3>La note enchantée</h3>
+                <p>Charonne</p>
+              </div>
+              <i class="fa-regular fa-heart heart void"></i>
+              <i class="fa-regular fa-heart heart full"></i>
+            </div>
+          </div>
+          <div class="section__main__card">
+            <a href="html/française.html" class="section__main__card__picture">
+              <img
+                src="ressources/restaurants/restaurant3.jpg"
+                alt="restaurant"
+              />
+            </a>
+            <div class="section__main__card__descp">
+              <div class="section__main__card__descp__titles">
+                <h3>À la française</h3>
+                <p>Cité Rouge</p>
+              </div>
+              <i class="fa-regular fa-heart heart void"></i>
+              <i class="fa-regular fa-heart heart full"></i>
+            </div>
+          </div>
+          <div class="section__main__card">
+            <a href="html/delice.html" class="section__main__card__picture">
+              <img
+                src="ressources/restaurants/restaurant4.jpg"
+                alt="restaurant"
+              />
+            </a>
+            <div class="section__main__card__descp">
+              <div class="section__main__card__descp__titles">
+                <h3>Le délice des sens</h3>
+                <p>Folie-Méricourt</p>
+              </div>
+              <i class="fa-regular fa-heart heart void"></i>
+              <i class="fa-regular fa-heart heart full"></i>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer id="footer">
-        <h1>ohmyfood</h1>
-        <div class="footer__text">
-            <a href="#" class="footer__text__icn"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
-            <a href="#" class="footer__text__icn"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
-            <a href="#">Mentions légales</a>
-            <a href="mailto:birkyo@gmail.com">Contact</a>
-        </div>
+      <h1>Eat Marker</h1>
+      <div class="footer__text">
+        <a href="#" class="footer__text__icn"
+          ><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a
+        >
+        <a href="#" class="footer__text__icn"
+          ><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a
+        >
+        <a href="#">Mentions légales</a>
+        <a href="mailto:birkyo@gmail.com">Contact</a>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

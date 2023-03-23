@@ -1,5 +1,5 @@
 {
-  "name": "ohmyfood_code",
+  "name": "Eat Marker_code",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,14 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SoonLePapillon/P3_Ohmyfood.git"
+    "url": "git+https://github.com/SoonLePapillon/P3_Eat Marker.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SoonLePapillon/P3_Ohmyfood/issues"
+    "url": "https://github.com/SoonLePapillon/P3_Eat Marker/issues"
   },
-  "homepage": "https://github.com/SoonLePapillon/P3_Ohmyfood#readme",
+  "homepage": "https://github.com/SoonLePapillon/P3_Eat Marker#readme",
   "browserslist": "last 4 versions"
-  
 }

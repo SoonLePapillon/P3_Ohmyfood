@@ -9,10 +9,10 @@ header {
     @include flex_row;
     @include justalign_center;
     width: 100%;
-    padding: 15px 0;
-    img {
-      width: 135px;
-      height: 25px;
+    padding: 10px 0;
+    span {
+      font-family: Shrikhand;
+      font-size: 24px;
     }
   }
 }

@@ -1,160 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="../css/style.css" rel="stylesheet">
-    <title>Ohmyfood - La palette du goût</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="../css/style.css" rel="stylesheet" />
+    <title>Eat Marker - La palette du goût</title>
+  </head>
+  <body>
     <header id="restau__header">
-        <a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
-        <div class="header__logo restau__logo"><img src="../ressources/logo/ohmyfood.png" alt="ohmyfood"></div>
-        <div class="header__photo"><img src="../ressources/restaurants/restaurant1.jpg" alt="La platte du goût"></div>
+      <a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
+      <div class="header__logo restau__logo">
+        <span>Eat Marker</span>
+      </div>
+      <div class="header__photo">
+        <img
+          src="../ressources/restaurants/restaurant1.jpg"
+          alt="La platte du goût"
+        />
+      </div>
     </header>
     <main id="restau__main">
-        <header>
-            <h1>la palette du goût</h1>
-            <i class="fa-regular fa-heart heart void"></i>
-            <i class="fa-regular fa-heart heart full"></i>
-        </header>
-        <section>
-            <h3 class="section__catégorie delay1">ENTRÉES</h3>
-            <div class="section__line delay1"></div>
-            <ul class="section__listfood delay1"> 
-                <li class="section__listfood__card">
-                    <div class="section__listfood__card__text">
-                        <h3 class="section__listfood__card__h3">Fricassée d'escargot</h3>
-                        <div class="section__listfood__card__text__desc">
-                            <p class="section__listfood__card__text__desc__p">Au piment d'Espelette</p>
-                            <p class="section__listfood__card__text__desc__price">25€</p>
-                        </div>
-                    </div>
-                    <div class="section__listfood__card__animation animation">
-                        <i class="fa-solid fa-circle-check"></i>
-                    </div>
-                </li>
-                <li class="section__listfood__card">
-                    <div class="section__listfood__card__text">
-                        <h3 class="section__listfood__card__h3">Foie gras de canard mi-cuit</h3>
-                        <div class="section__listfood__card__text__desc">
-                            <p class="section__listfood__card__text__desc__p">Et ses copeaux de truffe noire</p>
-                            <p class="section__listfood__card__text__desc__price">35€</p>
-                        </div>
-                    </div>
-                    <div class="section__listfood__card__animation animation">
-                        <i class="fa-solid fa-circle-check"></i>
-                    </div>
-                </li>
-                <li class="section__listfood__card">
-                    <div class="section__listfood__card__text">
-                        <h3 class="section__listfood__card__h3">Œuf au plat</h3>
-                        <div class="section__listfood__card__text__desc">
-                            <p class="section__listfood__card__text__desc__p">Assaisonné à la truffe sur lit de caviar</p>
-                            <p class="section__listfood__card__text__desc__price">20€</p>
-                        </div>
-                    </div>
-                    <div class="section__listfood__card__animation animation">
-                        <i class="fa-solid fa-circle-check"></i>
-                    </div>
-                </li>
-            </ul>
-            <h3 class="section__catégorie delay2">PLATS</h3>
-            <div class="section__line delay2"></div>
-            <ul class="section__listfood delay2"> 
-                <li class="section__listfood__card">
-                    <div class="section__listfood__card__text">
-                        <h3 class="section__listfood__card__h3">Filet de boeuf aux herbes</h3>
-                        <div class="section__listfood__card__text__desc">
-                            <p class="section__listfood__card__text__desc__p">Accompagné de sa ribambelle de légumes</p>
-                            <p class="section__listfood__card__text__desc__price">40€</p>
-                        </div>
-                    </div>
-                    <div class="section__listfood__card__animation animation">
-                        <i class="fa-solid fa-circle-check"></i>
-                    </div>
-                </li>
-                <li class="section__listfood__card">
-                    <div class="section__listfood__card__text">
-                        <h3 class="section__listfood__card__h3">Parmentier de queue de boeuf</h3>
-                        <div class="section__listfood__card__text__desc">
-                            <p class="section__listfood__card__text__desc__p">À la truffe noire sur sa purée de panais</p>
-                            <p class="section__listfood__card__text__desc__price">35€</p>
-                        </div>
-                    </div>
-                    <div class="section__listfood__card__animation animation">
-                        <i class="fa-solid fa-circle-check"></i>
-                    </div>
-                </li>
-                <li class="section__listfood__card">
-                    <div class="section__listfood__card__text">
-                        <h3 class="section__listfood__card__h3">Filet de turbot</h3>
-                        <div class="section__listfood__card__text__desc">
-                            <p class="section__listfood__card__text__desc__p">Aux agrumes</p>
-                            <p class="section__listfood__card__text__desc__price">44€</p>
-                        </div>
-                    </div>
-                    <div class="section__listfood__card__animation animation">
-                        <i class="fa-solid fa-circle-check"></i>
-                    </div>
-                </li>
-            </ul>
-            <h3 class="section__catégorie delay3">DESSERTS</h3>
-            <div class="section__line delay3"></div>
-            <ul class="section__listfood delay3">
-                <li class="section__listfood__card">
-                    <div class="section__listfood__card__text">
-                        <h3 class="section__listfood__card__h3">Paris-Brest</h3>
-                        <div class="section__listfood__card__text__desc">
-                            <p class="section__listfood__card__text__desc__p">Revisité</p>
-                            <p class="section__listfood__card__text__desc__price">18€</p>
-                        </div>
-                    </div>
-                    <div class="section__listfood__card__animation animation">
-                        <i class="fa-solid fa-circle-check"></i>
-                    </div>
-                </li>
-                <li class="section__listfood__card">
-                    <div class="section__listfood__card__text">
-                        <h3 class="section__listfood__card__h3">Macaron au chocolat d'exception </h3>
-                        <div class="section__listfood__card__text__desc">
-                            <p class="section__listfood__card__text__desc__p">Et glace à la vanille de Madagascar</p>
-                            <p class="section__listfood__card__text__desc__price">22€</p>
-                        </div>
-                    </div>
-                    <div class="section__listfood__card__animation animation">
-                        <i class="fa-solid fa-circle-check"></i>
-                    </div>
-                </li>
-                <li class="section__listfood__card">
-                    <div class="section__listfood__card__text">
-                        <h3 class="section__listfood__card__h3">Mousse au chocolat </h3>
-                        <div class="section__listfood__card__text__desc">
-                            <p class="section__listfood__card__text__desc__p">Au piment d'Espelette et à la truffe noire</p>
-                            <p class="section__listfood__card__text__desc__price">23€</p>
-                        </div>
-                    </div>
-                    <div class="section__listfood__card__animation animation">
-                        <i class="fa-solid fa-circle-check"></i>
-                    </div>
-                </li>
-            </ul>
-            <footer class="section__footer">
-                <button class="button buttonshop">Commander</button>
-            </footer>
-        </section>
+      <header>
+        <h1>la palette du goût</h1>
+        <i class="fa-regular fa-heart heart void"></i>
+        <i class="fa-regular fa-heart heart full"></i>
+      </header>
+      <section>
+        <h3 class="section__catégorie delay1">ENTRÉES</h3>
+        <div class="section__line delay1"></div>
+        <ul class="section__listfood delay1">
+          <li class="section__listfood__card">
+            <div class="section__listfood__card__text">
+              <h3 class="section__listfood__card__h3">Fricassée d'escargot</h3>
+              <div class="section__listfood__card__text__desc">
+                <p class="section__listfood__card__text__desc__p">
+                  Au piment d'Espelette
+                </p>
+                <p class="section__listfood__card__text__desc__price">25€</p>
+              </div>
+            </div>
+            <div class="section__listfood__card__animation animation">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+          </li>
+          <li class="section__listfood__card">
+            <div class="section__listfood__card__text">
+              <h3 class="section__listfood__card__h3">
+                Foie gras de canard mi-cuit
+              </h3>
+              <div class="section__listfood__card__text__desc">
+                <p class="section__listfood__card__text__desc__p">
+                  Et ses copeaux de truffe noire
+                </p>
+                <p class="section__listfood__card__text__desc__price">35€</p>
+              </div>
+            </div>
+            <div class="section__listfood__card__animation animation">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+          </li>
+          <li class="section__listfood__card">
+            <div class="section__listfood__card__text">
+              <h3 class="section__listfood__card__h3">Œuf au plat</h3>
+              <div class="section__listfood__card__text__desc">
+                <p class="section__listfood__card__text__desc__p">
+                  Assaisonné à la truffe sur lit de caviar
+                </p>
+                <p class="section__listfood__card__text__desc__price">20€</p>
+              </div>
+            </div>
+            <div class="section__listfood__card__animation animation">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+          </li>
+        </ul>
+        <h3 class="section__catégorie delay2">PLATS</h3>
+        <div class="section__line delay2"></div>
+        <ul class="section__listfood delay2">
+          <li class="section__listfood__card">
+            <div class="section__listfood__card__text">
+              <h3 class="section__listfood__card__h3">
+                Filet de boeuf aux herbes
+              </h3>
+              <div class="section__listfood__card__text__desc">
+                <p class="section__listfood__card__text__desc__p">
+                  Accompagné de sa ribambelle de légumes
+                </p>
+                <p class="section__listfood__card__text__desc__price">40€</p>
+              </div>
+            </div>
+            <div class="section__listfood__card__animation animation">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+          </li>
+          <li class="section__listfood__card">
+            <div class="section__listfood__card__text">
+              <h3 class="section__listfood__card__h3">
+                Parmentier de queue de boeuf
+              </h3>
+              <div class="section__listfood__card__text__desc">
+                <p class="section__listfood__card__text__desc__p">
+                  À la truffe noire sur sa purée de panais
+                </p>
+                <p class="section__listfood__card__text__desc__price">35€</p>
+              </div>
+            </div>
+            <div class="section__listfood__card__animation animation">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+          </li>
+          <li class="section__listfood__card">
+            <div class="section__listfood__card__text">
+              <h3 class="section__listfood__card__h3">Filet de turbot</h3>
+              <div class="section__listfood__card__text__desc">
+                <p class="section__listfood__card__text__desc__p">
+                  Aux agrumes
+                </p>
+                <p class="section__listfood__card__text__desc__price">44€</p>
+              </div>
+            </div>
+            <div class="section__listfood__card__animation animation">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+          </li>
+        </ul>
+        <h3 class="section__catégorie delay3">DESSERTS</h3>
+        <div class="section__line delay3"></div>
+        <ul class="section__listfood delay3">
+          <li class="section__listfood__card">
+            <div class="section__listfood__card__text">
+              <h3 class="section__listfood__card__h3">Paris-Brest</h3>
+              <div class="section__listfood__card__text__desc">
+                <p class="section__listfood__card__text__desc__p">Revisité</p>
+                <p class="section__listfood__card__text__desc__price">18€</p>
+              </div>
+            </div>
+            <div class="section__listfood__card__animation animation">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+          </li>
+          <li class="section__listfood__card">
+            <div class="section__listfood__card__text">
+              <h3 class="section__listfood__card__h3">
+                Macaron au chocolat d'exception
+              </h3>
+              <div class="section__listfood__card__text__desc">
+                <p class="section__listfood__card__text__desc__p">
+                  Et glace à la vanille de Madagascar
+                </p>
+                <p class="section__listfood__card__text__desc__price">22€</p>
+              </div>
+            </div>
+            <div class="section__listfood__card__animation animation">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+          </li>
+          <li class="section__listfood__card">
+            <div class="section__listfood__card__text">
+              <h3 class="section__listfood__card__h3">Mousse au chocolat</h3>
+              <div class="section__listfood__card__text__desc">
+                <p class="section__listfood__card__text__desc__p">
+                  Au piment d'Espelette et à la truffe noire
+                </p>
+                <p class="section__listfood__card__text__desc__price">23€</p>
+              </div>
+            </div>
+            <div class="section__listfood__card__animation animation">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+          </li>
+        </ul>
+        <footer class="section__footer">
+          <button class="button buttonshop">Commander</button>
+        </footer>
+      </section>
     </main>
     <footer id="footer">
-        <h1>ohmyfood</h1>
-        <div class="footer__text">
-            <a href="#" class="footer__text__icn"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
-            <a href="#" class="footer__text__icn"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
-            <a href="#">Mentions légales</a>
-            <a href="mailto:birkyo@gmail.com">Contact</a>
-        </div>
+      <h1>Eat Marker</h1>
+      <div class="footer__text">
+        <a href="#" class="footer__text__icn"
+          ><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a
+        >
+        <a href="#" class="footer__text__icn"
+          ><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a
+        >
+        <a href="#">Mentions légales</a>
+        <a href="mailto:birkyo@gmail.com">Contact</a>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
-
